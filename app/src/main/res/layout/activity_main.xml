@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+        
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="175dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_toRightOf="@+id/image"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:id="@+id/users"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/title">
+            <TextView
+                android:text="创建者："
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title"
+                android:layout_toRightOf="@+id/image"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                />
+            <Button
+                android:id="@+id/look"
+                android:textSize="15dp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:textColor="#836FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/users">
+            <TextView
+                android:id="@+id/wish"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/participant"
+                android:layout_toRightOf="@+id/image"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/participant"
+                android:layout_width="100dp"
+                android:layout_weight="3"
+                android:layout_height="40dp"
+                android:layout_below="@+id/title"
+                android:layout_toRightOf="@+id/image"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+               />
+        </LinearLayout>
+        <Button
+            android:text="查看位置"
+            android:id="@+id/map"
+            android:layout_below="@+id/lin"
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="活动详情:"
+        android:textSize="30dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"/>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="locSDK_3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/armeabi-v7a/locSDK_3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
